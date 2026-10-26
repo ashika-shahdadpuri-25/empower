@@ -163,12 +163,6 @@ void setup() {
   pinMode(LED_SOS, OUTPUT);
   pinMode(LED_ACK, OUTPUT);
 
-#if LOG_MODE
-  delay(2000);
-  for (int i = 0; i < 1000; i++) { Serial.println(touchRead(TOUCH_PIN)); delay(20); }
-  while (true) delay(1000);
-#endif
-
   // Blink SOS LED during calibration so you know not to touch
   digitalWrite(LED_SOS, HIGH);
   Serial.println("Calibrating - do NOT touch the pad");

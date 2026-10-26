@@ -291,7 +291,7 @@ function MathPanel() {
   }, []);
 
   const W = 600, H = 170, P = 14;
-  const filt = tele.map((d) => d.filtered);
+  const filt = tele.map((d) => d.minInWindow);
   const raw = tele.map((d) => d.raw);
   const thr = tele.length ? tele[tele.length - 1].threshold : 0;
   const mu = tele.length ? tele[tele.length - 1].mu : 0;
