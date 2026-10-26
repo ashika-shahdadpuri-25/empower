@@ -2,14 +2,9 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
+#include "secrets.h"
 
 #define LOG_MODE 0   //  0 = normal system
-
-// Wi-Fi Credentials (use a trusted local network)
-const char* ssid = "Ashika 5G";
-const char* password = "Palki0511";
-const char* SERVER_HOST = "192.168.0.180";
-const int   SERVER_PORT = 3000;
 
 // Pins
 const int TOUCH_PIN = 4;
